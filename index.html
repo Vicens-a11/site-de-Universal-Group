@@ -2094,6 +2094,503 @@
             background: var(--section-bg);
             color: var(--turquoise-blue);
         }
+
+        /* ==================== Responsive TRÈS PETITS ÉCRANS ==================== */
+
+/* Améliorations pour écrans très petits (280px - 375px) */
+@media (max-width: 480px) {
+    /* Réduction des espacements */
+    .container {
+        padding: 0 12px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 1.8rem);
+        padding-bottom: 15px;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+        padding: 0 8px;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        padding: calc(70px + 15px) 12px 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: clamp(1.5rem, 6vw, 1.8rem);
+        padding: 8px 10px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+        padding: 8px 10px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-hero {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    /* About section */
+    .about-stats {
+        gap: 10px;
+    }
+    
+    .stat-item {
+        padding: 10px 8px;
+    }
+    
+    .stat-number {
+        font-size: 1.2rem;
+    }
+    
+    .stat-text {
+        font-size: 0.7rem;
+    }
+    
+    /* Services grid */
+    .services-grid {
+        gap: 16px;
+        margin-top: 30px;
+    }
+    
+    .service-image {
+        height: 160px;
+    }
+    
+    .service-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.8rem;
+    }
+    
+    .service-content {
+        padding: 15px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .service-description {
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .btn-service {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        min-height: 36px;
+    }
+    
+    /* Why Us section */
+    .why-us-content {
+        gap: 25px;
+    }
+    
+    .why-us-text p {
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+    }
+    
+    .why-us-list li {
+        font-size: 0.8rem;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .why-us-list i {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+    }
+    
+    /* Reviews section */
+    .review-form {
+        padding: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .form-title {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+    }
+    
+    .form-grid {
+        gap: 12px;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    
+    .rating-stars {
+        gap: 5px;
+    }
+    
+    .star {
+        font-size: 1.3rem;
+    }
+    
+    .btn-submit {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+    
+    .review-card {
+        padding: 15px;
+    }
+    
+    .reviewer-name {
+        font-size: 1rem;
+    }
+    
+    .review-text {
+        font-size: 0.8rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 0 20px;
+    }
+    
+    .footer-content {
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.8rem;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .footer-cta {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        min-height: 36px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.7rem;
+        padding-top: 16px;
+    }
+    
+    /* Floating actions */
+    .floating-actions {
+        right: 12px;
+        bottom: 12px;
+        gap: 8px;
+    }
+    
+    .btn-don,
+    .btn-whatsapp,
+    .btn-contact-mobile {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        min-height: 38px;
+    }
+    
+    .btn-don i,
+    .btn-whatsapp i,
+    .btn-contact-mobile i {
+        font-size: 0.8rem;
+    }
+    
+    .location-floating {
+        left: 12px;
+        bottom: 12px;
+        padding: 8px 10px;
+    }
+    
+    .back-to-top {
+        right: 12px;
+        bottom: 120px;
+        width: 38px;
+        height: 38px;
+    }
+    
+    /* Modals */
+    .modal-header {
+        padding: 12px 16px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .modal-body {
+        padding: 16px;
+    }
+    
+    .modal-form-group {
+        margin-bottom: 12px;
+    }
+    
+    .modal-form-group input,
+    .modal-form-group textarea {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    
+    .modal-submit {
+        padding: 10px;
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+    
+    /* WhatsApp chat */
+    .whatsapp-chat-container {
+        width: 100%;
+        height: 85vh;
+        max-height: 85vh;
+        border-radius: 12px;
+    }
+    
+    .whatsapp-header {
+        padding: 10px 12px;
+    }
+    
+    .whatsapp-header h3 {
+        font-size: 1rem;
+    }
+    
+    .chat-messages {
+        padding: 12px;
+    }
+    
+    .message-bubble {
+        max-width: 85%;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .whatsapp-input-area {
+        padding: 8px;
+    }
+    
+    .whatsapp-input-area input {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .whatsapp-input-area button {
+        padding: 0 12px;
+        font-size: 0.75rem;
+        min-height: 38px;
+    }
+    
+    .whatsapp-actions {
+        padding: 6px 10px;
+        gap: 8px;
+    }
+    
+    .whatsapp-actions button {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Améliorations pour les écrans très étroits (280px - 320px) */
+@media (max-width: 320px) {
+    .logo {
+        font-size: 1rem;
+    }
+    
+    .logo i {
+        font-size: 1rem;
+        margin-right: 4px;
+    }
+    
+    .menu-toggle,
+    .theme-toggle {
+        padding: 6px 8px;
+        min-width: 36px;
+        min-height: 36px;
+        font-size: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.3rem;
+        padding: 6px 8px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.75rem;
+        padding: 6px 8px;
+    }
+    
+    .btn-hero {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1rem;
+    }
+    
+    .stat-text {
+        font-size: 0.65rem;
+    }
+    
+    .service-card .btn-service {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+    
+    .floating-actions {
+        right: 8px;
+        bottom: 8px;
+    }
+    
+    .location-floating {
+        left: 8px;
+        bottom: 8px;
+        padding: 6px 8px;
+    }
+    
+    .location-floating span {
+        display: none;
+    }
+    
+    .back-to-top {
+        right: 8px;
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* Amélioration du menu mobile pour petits écrans */
+@media (max-width: 768px) {
+    .nav-menu {
+        padding: 16px;
+    }
+    
+    .nav-menu a,
+    .nav-item-dropdown .dropdown-toggle {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .nav-item-dropdown .dropdown-menu {
+        padding-left: 16px;
+    }
+    
+    .nav-item-dropdown .dropdown-menu a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Amélioration du conteneur des avis */
+@media (max-width: 480px) {
+    .reviews-display {
+        gap: 16px;
+    }
+    
+    .rating-container {
+        padding: 12px;
+    }
+    
+    .rating-stars {
+        gap: 4px;
+    }
+}
+
+/* Amélioration des iframes */
+@media (max-width: 480px) {
+    .footer-map iframe {
+        height: 150px;
+    }
+    
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+/* Amélioration des boutons flottants pour très petits écrans */
+@media (max-width: 360px) {
+    .btn-don span,
+    .btn-whatsapp .btn-label,
+    .btn-contact-mobile span {
+        display: none;
+    }
+    
+    .btn-don,
+    .btn-whatsapp,
+    .btn-contact-mobile {
+        padding: 8px 10px;
+        min-width: 40px;
+        justify-content: center;
+    }
+    
+    .btn-don i,
+    .btn-whatsapp i,
+    .btn-contact-mobile i {
+        margin: 0;
+    }
+    
+    .contact-submenu button,
+    .contact-submenu a {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Correction des débordements horizontaux */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Amélioration des tablettes en mode portrait */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: clamp(2rem, 5vw, 2.8rem);
+    }
+    
+    .section {
+        padding: 70px 0;
+    }
+}
     </style>
 </head>
 
